@@ -1,0 +1,149 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f7c8c9;
+}
+
+#top {
+    height: 100px;
+    padding: 10px 15px 30px 15px;
+    background-color: #fff;
+    margin: 0px auto;
+    border: 5px solid #000;  
+}
+
+h1, h4, h5 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p, .loves {
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+}
+
+p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+h5 {
+    font-size: 35px;
+}
+
+h6 {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+}
+
+.loves {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 50px auto;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #000;
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: #000;
+    margin: 0;
+    display : flex;
+    justify-content: center;
+}
+
+.logos {
+    display: flex;
+    /*justify-content: center;*/
+    /*position: absolute;*/
+    /*background : red;*/
+    bottom: 0;
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.logos li {
+    list-style: none;
+    width: 90px;
+}
+
+.logos li a {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    z-index: 1;
+}
+
+.logos li a .fa {
+    position: relative;
+    color: #000;
+    transition: .5s;
+}
+
+.logos li a:hover .fa {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.logos li a:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: -2;
+}
+
+.logos li a:hover:before {
+    top: 0;
+}
+
+.logos li:nth-child(1) a:before {
+    background: #55acee;
+}
+
+.logos li:nth-child(2) a:before {
+    background: #e4405f;
+}
+
+.logos li:nth-child(3) a:before {
+    background: #3b5999;
+}
+
